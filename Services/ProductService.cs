@@ -9,7 +9,7 @@ namespace ProductApi.Services
 
         public ProductService(IProductRepository productRepository)
         {
-            _productRepository = productRepository;
+            _productRepository = productRepository; //dependency injected
         }
         public async Task<IEnumerable<Product>> GetAllProducts()
         {
